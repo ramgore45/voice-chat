@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from '../components/common/Card'
 import { useNavigate } from 'react-router-dom'
+import logo from '../assets/images/logo.png'
 
 export const Home = () => {
 
@@ -13,7 +14,7 @@ export const Home = () => {
   return (
     <div className='flex justify-center content-center items-center'>
       <Card 
-          imgTitle={''}
+          imgTitle={logo}
           title={"Welcome to Codershouse !"} 
           content1={
             <div className='flex text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia ullam asperiores nulla accusamus quod commodi fuga. Facere culpa rerum corrupti eveniet provident, deleniti suscipit, sint sapiente recusandae reiciendis repellat?</div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import { Card } from '../common/Card'
+import monkeyLogo from '../../assets/images/monkey-avatar.png'
 
 export const AvatarReg = ({clickHandler}) => {
   return (
         <Card
-            imgTitle={''}
+            imgTitle={monkeyLogo}
             title={"Okay UserName!"} 
             content1={
             <div>

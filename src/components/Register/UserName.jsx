@@ -1,10 +1,11 @@
 import React from 'react'
 import { Card } from '../common/Card'
+import goggleEmoji from '../../assets/images/goggle-emoji.png'
 
 export const UserName = ({clickHandler}) => {
   return (
         <Card
-            imgTitle={''}
+            imgTitle={goggleEmoji}
             title={"Pick your username!"} 
             content1={
             <div>
