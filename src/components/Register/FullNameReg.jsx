@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Card } from '../common/Card'
+import goggleLogo from '../../assets/images/goggle-emoji.png'
+import { Inputfield } from '../common/Inputfield'
 
 export const FullNameReg = ({clickHandler}) => {
+
+    const [fullName,setFullname] = useState('')
+
   return (
         <Card 
-            imgTitle={''}
+            imgTitle={goggleLogo}
             title={"What's your full name?"} 
             content1={
-            <div>
-                <div>USer Name</div>
-                <p className='text-center w-[80%] text-gray-500'>
-                    Peoples use real names at codershouse
-                </p>
-            </div>
+                <Inputfield name={'fullName'} type={'text'} placeholder={'John Doey'} 
+                    subText={'Peoples use real names at codershouse'}
+                    value={fullName}
+                    onChange={(e)=>setFullname(e.event.target)}
+                />
             }  
             btnText={'Next'}
             clickHandler={()=>clickHandler()}

@@ -8,7 +8,7 @@ import { Login } from './pages/Login';
 
 function App() {
   return (
-    <div className="w-screen min-h-screen text-white bg-gray-950">
+    <div className="w-screen min-h-screen text-white bg-[#121212]">
       <div className='w-9/12 mx-auto'>
         <Navbar/>
       </div>

@@ -4,14 +4,14 @@ import { Btn } from './Btn'
 
 export const Card = ({imgTitle, title, content1, content2, btnText, clickHandler}) => {
   return (
-    <div className='w-[37%] mt-16 flex flex-col gap-y-4 justify-center px-16 p-10 bg-gray-900 rounded-md'>
+    <div className='w-[37%] mt-16 flex flex-col gap-y-4 justify-center px-14 p-12 bg-[#1D1D1D] rounded-md'>
         
             {/* Heading */}
             <div className='flex gap-x-2 justify-center'>
                 <img src={imgTitle} 
-                    className='h-6 self-center'
+                    className='h-5 self-center'
                 />
-                <p className='text-xl font-medium'>{title}</p>
+                <p className='text-lg text-center font-medium'>{title}</p>
             </div>
 
             {/* content */}
